@@ -15,6 +15,8 @@ body {
 
 main {
   padding: 5.5rem 2rem 4rem 2rem;
+  max-width: 25.625rem;
+  margin: auto;
 }
 
 h1 {
@@ -83,4 +85,57 @@ h2 {
 
 .icon-container img {
   transform: scale(0.9);
+}
+
+@media (min-width: 55rem) {
+  main {
+    max-width: 76.875rem;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  .intro-paragraph {
+    width: 34rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cards-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.8rem;
+  }
+  .card {
+    padding: 1.6rem 2rem 1.8rem 2rem;
+  }
+  #card1 {
+    flex-basis: 31.5%;
+    flex-grow: 0;
+  }
+  .middle-cards {
+    flex-basis: 31.5%;
+    flex-grow: 0;
+  }
+  #card4 {
+    flex-basis: 31.5%;
+    flex-grow: 0;
+  }
+  #card2 {
+    margin-bottom: 2rem;
+  }
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+  .card p {
+    margin-bottom: 2.6rem;
+  }
+  .icon-container img {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 17.5rem) {
+  h1 {
+    font-size: 1.2rem;
+  }
 }
